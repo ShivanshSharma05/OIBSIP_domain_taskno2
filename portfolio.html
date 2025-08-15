@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>My Portfolio:Shivansh Sharma</title>
+    <style>
+        body {
+            background-color: rgb(42, 3, 86);
+            overflow-x: hidden;
+        }
+
+        .heading {
+            display: inline;
+            background-color: rgb(16, 167, 124);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgba(27, 208, 208, 0.833);
+            font-size: 32px;
+            margin-bottom: 0;
+        }
+
+        .nav {
+            display: flex;
+            display: inline;
+            justify-content: space-around;
+            color: rgb(78, 26, 201);
+            background-color: rgb(132, 1, 255);
+            border-bottom: 2px solid black;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: right;
+            font-size: 26px;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 30px;
+            color: rgb(202, 54, 236);
+        }
+
+        nav ul li:hover {
+            background-color: rgba(13, 102, 227, 0.1);
+        }
+
+        div {
+            font-style: bold;
+            color: blue;
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        div::after {
+            content: attr(data-text);
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        div {
+            animation: fadeSlide 1.5s ease forwards;
+        }
+
+        @keyframes fadeSlide {
+            0% {
+                opacity: 0;
+                transform: translateY(50px) scale(1.02);
+                filter: blur(5px);
+            }
+
+            40% {
+                opacity: 1;
+                transform: translateY(-5px) scale(1.02);
+                filter: blur(0);
+            }
+
+            100% {
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .aboutMe h1 {
+            font-size: 44px;
+        }
+
+        .aboutMe p {
+            color: darkcyan;
+            max-width: 100%;
+            font-size: 22px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .honors h1 {
+            font-size: 44px;
+            margin-bottom: 16px;
+        }
+
+        .honors ul {
+            color: darkcyan;
+            list-style: circle;
+            font-size: 22px;
+        }
+
+        .honors ul li {
+            padding: 4px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .mySkills {
+            color: blue;
+            font-size: 22px;
+            margin-top: 12px;
+
+        }
+
+        .skills {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            padding: 10px;
+            scroll-behavior: smooth;
+        }
+
+        .skills img {
+            max-height: 200px;
+            border-radius: 8px;
+            flex-shrink: 0;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .skills img:hover {
+            transform: scale(1.05);
+        }
+
+        .skills::-webkit-scrollbar {
+            display: none;
+        }
+
+        .skills {
+            scrollbar-width: none;
+        }
+
+        .imgTitle {
+            display: flex;
+            justify-content: left;
+        }
+
+        .imgTitle ul {
+            display: flex;
+            justify-content: left;
+            font-size: 22px;
+        }
+
+        .imgTitle ul li {
+            list-style: none;
+            margin: 0 75px;
+            color: aqua
+        }
+
+        .contactMe p {
+            color: deepskyblue;
+            margin-top: 4px;
+            margin-bottom: 0;
+        }
+
+        .contactMe a {
+            color: cornflowerblue;
+            margin: 0;
+        }
+
+        .copyright {
+            color: black;
+            justify-content: center;
+            text-align: center;
+            margin: 50px 50px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="heading">
+            <h1>My Portfolio</h1>
+        </div>
+        <div class="contents">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Help</li>
+            </ul>
+        </div>
+    </nav>
+
+    <hr>
+
+    <div class="aboutMe">
+        <h1>About Me :</h1>
+        <p>
+            Hello!&#x1F44B; My name is <em>Shivansh Sharma</em> and I am a dedicated and results-driven individual with
+            a strong foundation in computer science. Currently pursuing my Bachelor of Technology from Bundelkhand
+            Institute of Engineering & Technology,Jhansi. I am committed to continuous learning and applying my skills
+            to create innovative, efficient, and impactful solutions.
+            <br><br>
+            My academic and personal expeience with tech has allowed me to develop proficiency in C++, data structures,
+            problem-solving, along with a disciplined approach to tackling complex challenges. I value precision,
+            adaptability, and a strong work ethic in all aspects of my work.I am currently developing my skills in
+            front-end web-development.
+            <br><br>
+            With a long-term vision of contributing to cutting-edge advancements in game development, I strive to merge
+            technical expertise with creative problem-solving to deliver results that meet and exceed expectations.
+            <br>
+        </p>
+    </div>
+
+    <div class="honors">
+        <h1>My Accomplishments:</h1>
+        <ul>
+            <li>95.2% marks obtained in CBSE High-school examination,2022</li>
+            <li>93.8% marks obtained in CBSE Intermediate examination,2024</p>
+            <li>Top 4.8% in JEE Mains-2024</li>
+            <li>7.73 YGPA in 1st year at B.I.E.T,Jhansi</li>
+        </ul>
+    </div>
+
+    <br>
+
+    <div class="mySkills">
+        <h1>Skills :</h1>
+    </div>
+    <div class="skills">
+        <img src="https://www.pinclipart.com/picdir/big/396-3965857_c-c-programming-language-logo-clipart.png" alt="C">
+        <img src="https://freepnglogo.com/images/all_img/c-logo-a2fa.png" alt="C++">
+        <img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-html-logo-0.png" alt="HTML">
+        <img src="https://freepnglogo.com/images/all_img/css-1667.png" alt="CSS">
+        <img src="https://images.seeklogo.com/logo-png/27/2/javascript-js-logo-png_seeklogo-273557.png"
+            alt="JavaScript">
+    </div>
+    <div class="imgTitle">
+        <ul>
+            <li>C</li>
+            <li>C++</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+        </ul>
+    </div>
+
+    <div class="contactMe">
+        <p>For queries-<br></p>
+        <a href="mailto:9450887851n@gmail.com" target="_blank">Mail Us</a>
+        <p>Connect with me-<br></p>
+        <a href="https://www.linkedin.com/in/shivansh-sharma-514861331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank">LinkedIn</a>
+        <br>
+        <a href="https://github.com/ShivanshSharma05" target="_blank">GitHub</a>
+        <br>
+    </div>
+
+    <div class="copyright">
+        <p>The contents of this website have been copyrighted under 'The Copyright Act of India,1957' and any damage to
+            the personal information/intellectual property would result in consequences as mentioned under 'The
+            Constitution Of India'.</p>
+        <small>&#169;Copyrighted, All rights reserved</small>
+    </div>
+</body>
+
+</html>
